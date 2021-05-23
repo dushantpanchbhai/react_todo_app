@@ -12,7 +12,7 @@ export const TodoItem = ({todo,onDelete}) => {
     
     var todoDate = new Date(todo.date.split('-').reverse())
     var current = new Date()
-    var diff = todoDate.getDate()-current.getDate();
+    var diff = todoDate.getTime()-current.getTime();
 
     //style for the color 
     const style = {
